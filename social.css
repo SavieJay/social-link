@@ -1,0 +1,131 @@
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark-Grey: hsl(0, 0%, 12%);
+    --Off-Black: hsl(0, 0%, 8%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Off-Black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--White);
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:"slnt" 0;
+    padding: 30px;
+}
+
+.page {
+    background-color: var(--Dark-Grey);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 36%;
+    height: auto;
+    padding: 60px 40px 50px;
+    border-radius: 10px;
+}
+
+.img-contain {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.social-link {
+    background-color: var(--Grey);
+    width: 100%;
+    margin: auto 0;
+    padding: 14px 0;
+    border-radius: 8px;
+    width: 100%;
+    color: var(--White);
+    text-align: center;
+    font-weight: 600;
+}
+
+.social-link-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    margin: 0;
+} 
+
+h1 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+    padding: 35px 0 0 0;
+}
+
+h3 {
+    color: hsl(75, 94%, 57%);
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0;
+    padding: 10px 0 30px 0 ;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0 0 30px 0;
+}
+
+@media screen and (min-width: 1440px) {
+    .page {
+        width: 36%;
+    }
+}
+
+@media screen and (min-width: 990px) and (max-width: 1440px) {
+    .page {
+        width: 36%;
+    }
+
+    h1, h3, p {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 675px) and (max-width: 990px) {
+    .page {
+        width: 50%;
+    }
+
+    h1, h3, p {
+        text-align: center;
+    }
+}
+
+
+@media screen and (min-width: 375px) and (max-width: 675px) {
+    .page {
+        width: 70%;
+    }
+
+    h1, h3, p {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 344px) and (max-width: 375px) {
+    .page {
+        width: 95%;
+    }
+
+    h1, h3, p {
+        text-align: center;
+    }
+}
